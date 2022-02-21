@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".RecipesActivity">
+
+    <LinearLayout
+        android:id="@+id/purpleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/rounded_layout_recipes"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/pointer_left_recipes_screen"
+            android:text="@string/mainScreenRecipes"
+            android:drawablePadding="12dp"
+            android:textColor="#ffffff"
+            android:textSize="29sp"
+            android:textStyle="bold"
+            android:onClick="fromRecipesToMainScreen"/>
+
+        <SearchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/rounded_searchview"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonBalanced"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/recipe_button_bg"
+                android:text="@string/recipesButtonBalanced"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:onClick="onBalancedClick"/>
+
+            <Button
+                android:id="@+id/buttonHighFiber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/recipesButtonHighFiber"
+                android:background="@drawable/recipe_button_bg"
+                app:layout_constraintEnd_toStartOf="@+id/buttonHighProtein"
+                app:layout_constraintStart_toEndOf="@+id/buttonBalanced"
+                app:layout_constraintTop_toTopOf="parent"
+                android:onClick="highFiberClick"/>
+
+            <Button
+                android:id="@+id/buttonHighProtein"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/recipesButtonHighProtein"
+                android:padding="6dp"
+                android:background="@drawable/recipe_button_bg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:onClick="highProteinClick"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/recipesLv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/purpleLayout">
+
+    </ListView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

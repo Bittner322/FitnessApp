@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PushUpsTimerActivity">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/pointer_left"
+        android:onClick="fromPushUpsTimerToAllExercises"
+        app:layout_constraintBottom_toTopOf="@+id/runningProgressBar"
+        app:layout_constraintEnd_toStartOf="@+id/textView8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pushUps"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/runningProgressBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/runningProgressBar"
+        android:layout_width="347dp"
+        android:layout_height="329dp"
+        android:layout_marginTop="188dp"
+        android:layout_marginBottom="362dp"
+        android:indeterminateOnly="false"
+        android:progressDrawable="@drawable/circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pushUpsTimerSecondsLeftTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="79sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/runningProgressBar"
+        app:layout_constraintEnd_toEndOf="@+id/runningProgressBar"
+        app:layout_constraintStart_toStartOf="@+id/runningProgressBar"
+        app:layout_constraintTop_toTopOf="@+id/runningProgressBar" />
+
+    <Button
+        android:id="@+id/pushUpsStartFinishButton"
+        android:layout_width="328dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:backgroundTint="#B461F5"
+        android:text="@string/timerStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="pushUpsTimerClick"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

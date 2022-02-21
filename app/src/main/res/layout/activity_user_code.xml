@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    tools:context=".UserCodeActivity">
+
+    <TextView
+        android:id="@+id/codeActivitySuperFitText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="40dp"
+        android:text="@string/AppLabel"
+        android:textColor="#FFFFFF"
+        android:textSize="72sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:layout_marginBottom="459dp"
+        android:text="vasya@mail.ru"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/codeActivitySuperFitText" />
+
+    <LinearLayout
+        android:layout_width="284dp"
+        android:layout_height="276dp"
+        android:layout_marginTop="334dp"
+        android:layout_marginBottom="139dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/layoutNumber1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:onClick="onCodeClick"
+                    android:id="@+id/button1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/code_screen_button_bg"
+                    android:layout_margin="6dp"
+                    android:text="@string/one"
+                    android:textSize="60dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutNumber4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:onClick="onCodeClick"
+                    android:id="@+id/button4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/code_screen_button_bg"
+                    android:layout_margin="6dp"
+                    android:textSize="60dp"
+                    android:text="@string/four"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutNumber7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:onClick="onCodeClick"
+                    android:id="@+id/button7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/code_screen_button_bg"
+                    android:layout_margin="6dp"
+                    android:textSize="60dp"
+                    android:text="@string/seven"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/layoutNumber2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:onClick="onCodeClick"
+                    android:id="@+id/button2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/code_screen_button_bg"
+                    android:layout_margin="6dp"
+                    android:textSize="60dp"
+                    android:text="@string/two"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutNumber5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:onClick="onCodeClick"
+                    android:id="@+id/button5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/code_screen_button_bg"
+                    android:layout_margin="6dp"
+                    android:textSize="60dp"
+                    android:text="@string/five"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutNumber8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:onClick="onCodeClick"
+                    android:id="@+id/button8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/code_screen_button_bg"
+                    android:layout_margin="6dp"
+                    android:textSize="60dp"
+                    android:text="@string/eight"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/layoutNumber3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:onClick="onCodeClick"
+                    android:id="@+id/button3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/code_screen_button_bg"
+                    android:layout_margin="6dp"
+                    android:textSize="60dp"
+                    android:text="@string/three"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutNumber6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <Button
+                    android:onClick="onCodeClick"
+                    android:id="@+id/button6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/code_screen_button_bg"
+                    android:layout_margin="6dp"
+                    android:textSize="60dp"
+                    android:text="@string/six"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutNumber9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:onClick="onCodeClick"
+                    android:id="@+id/button9"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/code_screen_button_bg"
+                    android:layout_margin="6dp"
+                    android:textSize="60dp"
+                    android:text="@string/nine"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
